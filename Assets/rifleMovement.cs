@@ -7,7 +7,8 @@ public class rifleMovement : MonoBehaviour
 {
     private PlayerInput playerInput;
     public GameObject Player;
-    public float rotationSpeed =200.0f;
+    public float rotationSpeed =1.0f;
+    public float rotationSmoothness = 20f;
 
     void Start() {
         playerInput=GetComponent<PlayerInput>();
@@ -16,23 +17,14 @@ public class rifleMovement : MonoBehaviour
     void Update()
     {
         Vector2 movementInput = playerInput.actions["move"].ReadValue<Vector2>();
-        float deadZoneThreshold = 0.1f; // Adjust dead zone size
-        if (Mathf.Abs(movementInput.x) < deadZoneThreshold &&
-            Mathf.Abs(movementInput.y) < deadZoneThreshold)
-        {
-            return;
-        }
+        if(movementInput.x>0||movementInput.y>0){
         float targetRotationY = movementInput.x * rotationSpeed;
-        float targetRotationX = -movementInput.y * rotationSpeed;
-
-
-        Quaternion yRotation = Quaternion.Euler(targetRotationX, targetRotationY, 0f);
-        Player.transform.rotation = yRotation.normalized;
-
-        Debug.Log(targetRotationY);
-        Debug.Log(targetRotationX);
-
-        // Apply smooth rotation with RotateTowards (optional)
-        // transform.rotation = Quaternion.RotateTowards(transform.rotation, yRotation, rotationSpeed * Time.deltaTime);
+        Quaternion targetRotation = Quaternion.Euler(0f, targetRotationY, 0f);
+        Quaternion smoothedRotation = Quaternion.Lerp(Player.transform.rotation, targetRotation, rotationSmoothness * Time.deltaTime);
+        Debug.Log(smoothedRotation.y);
+        if(smoothedRotation.y>=-58.744&&smoothedRotation.y<=58.744){
+        Player.transform.rotation = smoothedRotation;
+        }
+}
     }
 }
