@@ -1242,6 +1242,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6835547874355017935 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5852574019775551293, guid: e80d5a31541c1924587c9196680e772e,
+    type: 3}
+  m_PrefabInstance: {fileID: 6835547874355017933}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7843312059361149315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1343,7 +1355,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _bulletCountText
       value: 
-      objectReference: {fileID: 6835547874355017934}
+      objectReference: {fileID: 6835547874355017935}
     - target: {fileID: 2190508524963363711, guid: 668aec3016004f342a9b576aa51acb9f,
         type: 3}
       propertyPath: m_Name
