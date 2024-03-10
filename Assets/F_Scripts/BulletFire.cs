@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Sockets;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -16,7 +17,7 @@ public class BulletFire : MonoBehaviour
 
 	private List<GameObject> _bullets = new List<GameObject>();
 
-	public void FireBullet(float playerAngle)
+	public void FireBullet(float playerAngle,TextMeshProUGUI _bulletCountText)
 	{
 		if (countMagazine < magazine)
 		{
@@ -36,6 +37,7 @@ public class BulletFire : MonoBehaviour
 			else
 				Debug.Log("RigidBody On Bullet Does not Exists");
 			countMagazine++;
+			_bulletCountText.text = string.Format($"Bullet: {magazine-countMagazine}");
 		}
 	}
 	private void Update()

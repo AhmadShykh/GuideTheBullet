@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -8,6 +9,7 @@ public class RifleScript : MonoBehaviour
 {
     [SerializeField] Button _fireBtn;
     [SerializeField] BulletFire _fireBullet;
+    [SerializeField] TextMeshProUGUI _bulletCountText;
     public GameObject Player;
     public float rotationSpeed =1.0f;
     [SerializeField] FixedJoystick _joystick;
@@ -35,7 +37,8 @@ public class RifleScript : MonoBehaviour
 
     void FireBtnClickFunc()
     {
-        _fireBullet.FireBullet(_playerRotation);
+
+        _fireBullet.FireBullet(_playerRotation, _bulletCountText);
     }
 
 }
