@@ -14,7 +14,7 @@ public class BulletFire : MonoBehaviour
 	public int countMagazine = 0;
 	public float projectileSpeed = 10f;
 
-	private List<GameObject> _bullets;
+	private List<GameObject> _bullets = new List<GameObject>();
 
 	public void FireBullet(float playerAngle)
 	{
