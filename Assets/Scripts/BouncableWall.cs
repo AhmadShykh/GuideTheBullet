@@ -9,7 +9,7 @@ public class BouncableWall : Walls
 		if (other.gameObject.tag == "Bullet")
 		{
 			Rigidbody rigidbody = other.gameObject.GetComponent<Rigidbody>();
-			Vector3 reflectionDirection = Vector3.Reflect(rigidbody.velocity.normalized, transform.forward);
+			Vector3 reflectionDirection = Vector3.Reflect(rigidbody.velocity.normalized, transform.right);
 
 			// Set the new velocity of the Rigidbody to the reflection direction
 			rigidbody.velocity = reflectionDirection * rigidbody.velocity.magnitude;
