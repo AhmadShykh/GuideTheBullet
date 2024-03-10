@@ -6,6 +6,7 @@ public class DestroyAfter : MonoBehaviour
 {
     [SerializeField] float _timeToDelete;
 	private BulletFire _bulletFire;
+	private bool destroyed = false;
 	private void Start()
 	{
 		Invoke("DestroyObject", _timeToDelete);
@@ -17,9 +18,14 @@ public class DestroyAfter : MonoBehaviour
 		_bulletFire = bulletFire;
 	}
 
-	void DestroyObject()
+	public void DestroyObject()
 	{
-		_bulletFire.RemoveThis(gameObject);
-		Destroy(this, 0.01f);
+		if(!destroyed)
+		{
+			destroyed = true;
+			_bulletFire.RemoveThis(gameObject);
+			Destroy(this, 0.01f);
+		}
+		
 	}
 }

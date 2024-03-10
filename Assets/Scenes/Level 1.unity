@@ -399,6 +399,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 91707828}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1059503914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2824734428681212231, guid: e80d5a31541c1924587c9196680e772e,
+    type: 3}
+  m_PrefabInstance: {fileID: 6835547874355017933}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1322192653 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 728088190256890880, guid: e80d5a31541c1924587c9196680e772e,
@@ -922,6 +934,11 @@ PrefabInstance:
       propertyPath: _joystick
       value: 
       objectReference: {fileID: 2117745506}
+    - target: {fileID: 4046536845901644549, guid: 668aec3016004f342a9b576aa51acb9f,
+        type: 3}
+      propertyPath: _levelText
+      value: 
+      objectReference: {fileID: 1059503914}
     - target: {fileID: 4046536845901644549, guid: 668aec3016004f342a9b576aa51acb9f,
         type: 3}
       propertyPath: _bulletCountText
