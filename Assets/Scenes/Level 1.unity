@@ -924,6 +924,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2490193135674136089, guid: 668aec3016004f342a9b576aa51acb9f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4046536845901644549, guid: 668aec3016004f342a9b576aa51acb9f,
         type: 3}
       propertyPath: _fireBtn
