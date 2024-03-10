@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 157965521175038092}
   - component: {fileID: 2294573077246248012}
   - component: {fileID: 8605464451276822426}
-  - component: {fileID: 134177947970077746}
+  - component: {fileID: 6562909389563823481}
   m_Layer: 0
   m_Name: Destroyable Wall
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3793973732376902229}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.15799999, y: 0.21399999, z: -0.017887428}
   m_LocalScale: {x: 82.322, y: 144.68095, z: 138.07872}
   m_ConstrainProportionsScale: 0
@@ -106,7 +106,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.00083431834, y: 0.0030316212, z: 0.0030316217}
   m_Center: {x: 0.0000000017462298, y: 3.3087225e-24, z: 4.656614e-10}
---- !u!114 &134177947970077746
+--- !u!114 &6562909389563823481
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,6 +115,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3793973732376902229}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e18d970dd274e194094061e054551998, type: 3}
+  m_Script: {fileID: 11500000, guid: f933634eec6ab7747bcce86d5e3d029e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
