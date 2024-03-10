@@ -22,7 +22,7 @@ public class BulletFire : MonoBehaviour
 	{
 		_bulletCountText.text = magazine.ToString();
 	}
-	public void FireBullet(float playerAngle,TextMeshProUGUI _bulletCountText)
+	public void FireBullet(float playerAngle)
 	{
 		if (countMagazine < magazine)
 		{
