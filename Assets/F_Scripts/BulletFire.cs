@@ -10,6 +10,7 @@ using UnityEngine.SceneManagement;
 public class BulletFire : MonoBehaviour
 {
 	[SerializeField] GameObject Bullet;
+	[SerializeField] TextMeshProUGUI _bulletCountText;
 	public int magazine = 10;
 
 	public int countMagazine = 0;
@@ -17,7 +18,11 @@ public class BulletFire : MonoBehaviour
 
 	private List<GameObject> _bullets = new List<GameObject>();
 
-	public void FireBullet(float playerAngle,TextMeshProUGUI _bulletCountText)
+	private void Start()
+	{
+		_bulletCountText.text = magazine.ToString();
+	}
+	public void FireBullet(float playerAngle)
 	{
 		if (countMagazine < magazine)
 		{
