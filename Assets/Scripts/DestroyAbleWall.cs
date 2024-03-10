@@ -10,6 +10,7 @@ public class DestroyAbleWall : MonoBehaviour
 	{
 		if(!_destroyed && other.tag == "Bullet")
 		{
+			other.gameObject.GetComponent<DestroyAfter>().DestroyObject();
 			_destroyed = true;
 			Destroy(gameObject, 0.01f);
 		}

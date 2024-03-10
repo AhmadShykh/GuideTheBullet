@@ -20,7 +20,7 @@ public class RifleScript : MonoBehaviour
 
 	private void Start()
 	{
-        _levelText.text = string.Format($"Level: {SceneManager.sceneCount}");
+        _levelText.text = string.Format($"Level: {SceneManager.GetActiveScene().buildIndex}");
         _fireBtn.onClick.AddListener(FireBtnClickFunc);
 	}
 

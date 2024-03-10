@@ -20,7 +20,7 @@ public class BulletFire : MonoBehaviour
 
 	private void Start()
 	{
-		_bulletCountText.text = string.Format($"Bullet: {magazine}");
+		_bulletCountText.text = string.Format($"{magazine}");
 	}
 	public void FireBullet(float playerAngle)
 	{
@@ -42,7 +42,7 @@ public class BulletFire : MonoBehaviour
 			else
 				Debug.Log("RigidBody On Bullet Does not Exists");
 			countMagazine++;
-			_bulletCountText.text = string.Format($"Bullet: {magazine-countMagazine}");
+			_bulletCountText.text = string.Format($"{magazine-countMagazine}");
 		}
 	}
 	private void Update()
