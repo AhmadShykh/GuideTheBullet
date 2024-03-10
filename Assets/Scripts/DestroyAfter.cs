@@ -24,7 +24,7 @@ public class DestroyAfter : MonoBehaviour
 		{
 			destroyed = true;
 			_bulletFire.RemoveThis(gameObject);
-			Destroy(this, 0.01f);
+			Destroy(gameObject, 0.01f);
 		}
 		
 	}
