@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Net.Sockets;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class BulletFire : MonoBehaviour
 {
@@ -12,13 +14,18 @@ public class BulletFire : MonoBehaviour
 	public int countMagazine = 0;
 	public float projectileSpeed = 10f;
 
+	private List<GameObject> _bullets;
+
 	public void FireBullet(float playerAngle)
 	{
 		if (countMagazine < magazine)
 		{
 			GameObject bullet = Instantiate(Bullet, transform.position,Quaternion.Euler(0,0,0));
 			Rigidbody rb = bullet.GetComponent<Rigidbody>();
-			bullet.transform.localScale = new Vector3(0.5f,0.5f,0.5f);
+			bullet.GetComponent<DestroyAfter>().SetBulletFire(this);
+
+			_bullets.Add(bullet);
+			bullet.transform.localScale = new Vector3(0.3f,0.3f,0.3f);
 			// Check if the rigidbody component exists
 			if (rb != null)
 			{
@@ -30,6 +37,15 @@ public class BulletFire : MonoBehaviour
 				Debug.Log("RigidBody On Bullet Does not Exists");
 			countMagazine++;
 		}
+	}
+	private void Update()
+	{
+		if (countMagazine >= magazine && _bullets.Count == 0)
+			SceneManager.LoadScene(0);
+	}
+	public void RemoveThis(GameObject bullet)
+	{
+		_bullets.Remove(bullet);
 	}
 
 }

@@ -12,7 +12,7 @@ public class EnemyScript : MonoBehaviour
 		{
 			dead = true;
 			Destroy(gameObject,2);
-			SceneManager.LoadScene("Level 2");
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
 		}
 	}
 }
