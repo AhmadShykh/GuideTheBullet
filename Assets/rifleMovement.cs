@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class RifleScript : MonoBehaviour
 {
     [SerializeField] Button _fireBtn;
     [SerializeField] BulletFire _fireBullet;
+    [SerializeField] TextMeshProUGUI _levelText; 
     public GameObject Player;
     public float rotationSpeed =1.0f;
     [SerializeField] FixedJoystick _joystick;
@@ -18,6 +20,7 @@ public class RifleScript : MonoBehaviour
 
 	private void Start()
 	{
+        _levelText.text = string.Format($"Level: {SceneManager.sceneCount}");
         _fireBtn.onClick.AddListener(FireBtnClickFunc);
 	}
 
