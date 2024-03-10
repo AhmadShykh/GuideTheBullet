@@ -8,7 +8,7 @@ public class EnemyScript : MonoBehaviour
 	bool dead = false;
 	private void OnTriggerEnter(Collider other)
 	{
-		if(!dead && other.tag == "Ball")
+		if(!dead && other.tag == "Bullet")
 		{
 			dead = true;
 			Destroy(gameObject,2);

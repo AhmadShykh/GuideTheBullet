@@ -22,17 +22,8 @@ public class BulletFire : MonoBehaviour
 			// Check if the rigidbody component exists
 			if (rb != null)
 			{
-				// Calculate the direction to shoot b
-				// ased on the parent object's forward direction
-				//Vector3 shootDirection = playerLoc;
-				// Calculate the directional vector using trigonometry
-				// Apply force to shoot the projectile in the calculated direction
-				// Calculate the directional vector using trigonometry
 				playerAngle = Mathf.Deg2Rad*(playerAngle+90);
 				Vector3 forceDirection = new Vector3(Mathf.Cos(playerAngle), 0f, Mathf.Sin(playerAngle));
-
-				Debug.Log($"{playerAngle} {forceDirection}");
-				//Debug.Log(_bulletHole.position);
 				rb.AddForce(forceDirection, ForceMode.VelocityChange);
 			}
 			else
