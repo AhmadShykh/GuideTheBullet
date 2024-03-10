@@ -36,7 +36,7 @@ public class MoveableWall : Walls
 	{
 		if (collider.gameObject.tag == "Bullet")
 		{
-			collision.gameObject.GetComponent<DestroyAfter>().DestroyObject();
+			collider.gameObject.GetComponent<DestroyAfter>().DestroyObject();
 		}
 	}
 }
