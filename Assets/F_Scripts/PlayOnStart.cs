@@ -1,15 +1,29 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayOnStart : MonoBehaviour
 {
-  public AudioSource audioSource;
+	static PlayOnStart instance;
+	private void Start()
+	{
+		if (instance == null)
+		{
+			instance = this;	
+			DontDestroyOnLoad(gameObject);
+		}
+		else
+		{
+			Destroy(gameObject);	
+		}	
+	}
 
-  void Update()
-  {
-    if (audioSource != null)
-    {
-      Debug.Log("Hello");
-      audioSource.Play();
-    }
-  }
+
+	//void Update()
+	//{
+	//  if (audioSource != null)
+	//  {
+	//    Debug.Log("Hello");
+	//    audioSource.Play();
+	//  }
+	//}
 }
