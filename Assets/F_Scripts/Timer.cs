@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class Timer : MonoBehaviour
         if (currentTime < 0)
         {
             currentTime = 0;
+            SceneManager.LoadScene("MainMenu");
         }
 
         // Calculate minutes and seconds
