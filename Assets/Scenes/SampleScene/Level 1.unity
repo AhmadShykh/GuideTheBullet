@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589245, b: 0.2978263, a: 1}
+  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589246, b: 0.2978263, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -684,6 +684,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1815707304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1240066524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2190508524963363711, guid: 668aec3016004f342a9b576aa51acb9f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7845163520300741140}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1240066526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240066524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a657d636f99469f49ab788856d5989d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1962479828434100, guid: f2f1583691055664fa10bdc55fc097da,
+    type: 3}
+  firePoint: {fileID: 0}
+  bulletSpeed: 20
+  hitEffectPrefab: {fileID: 1418158253269514, guid: 21085c79311e77b449a75a693f2a682f,
+    type: 3}
 --- !u!1 &1322192651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1823,7 +1847,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2190508524963363711, guid: 668aec3016004f342a9b576aa51acb9f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1240066526}
   m_SourcePrefab: {fileID: 100100000, guid: 668aec3016004f342a9b576aa51acb9f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
