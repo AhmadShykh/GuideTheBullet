@@ -20,7 +20,7 @@ public class BulletFire : MonoBehaviour
 
 	private void Start()
 	{
-		_bulletCountText.text = magazine.ToString();
+		_bulletCountText.text = string.Format($"Bullet: {magazine}");
 	}
 	public void FireBullet(float playerAngle)
 	{
