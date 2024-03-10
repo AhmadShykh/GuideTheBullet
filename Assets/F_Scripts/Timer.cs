@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Timer : MonoBehaviour
@@ -7,7 +8,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private float totalTime = 180.0f; // Total countdown time in seconds
     private float currentTime; // Current remaining time
 
-    public Text timerText; // Reference to the UI Text element
+    public TextMeshProUGUI timerText; // Reference to the UI Text element
 
     // Start is called before the first frame update
     void Start()
