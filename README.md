@@ -20,6 +20,13 @@ problem-solving skills and reflexes as they progress through the game.
 
 The game is built using the Unity Mobile 3D mode. The version of Unity that is used is 2022.3.18f1.
 
+# Installation
+
+- Download the APK file from the repository.
+- Enable installation from unknown sources in your device settings.
+- Install the APK file on your Android device.
+- Open the game and start playing!
+
 # How to Play
 - Tap and drag the puzzle blocks to manipulate their position.
 - Plan your moves carefully to clear a path for the bullet to hit your opponent.
@@ -27,3 +34,9 @@ The game is built using the Unity Mobile 3D mode. The version of Unity that is u
 - Explore bonus objectives and hidden collectibles to unlock additional content and rewards.
 
 # Screenshots
+
+# Disclaimer
+
+Guide The Bullet is a fictional game concept created for educational and entertainment purposes only. Any resemblance to actual games, living or dead, is purely coincidental.
+
+Enjoy the game and have fun guiding your bullets to victory!
