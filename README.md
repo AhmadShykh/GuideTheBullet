@@ -35,6 +35,17 @@ The game is built using the Unity Mobile 3D mode. The version of Unity that is u
 
 # Screenshots
 
+
+![Screenshot_20240505-211515](https://github.com/AhmadShykh/GuideTheBullet/assets/52326090/2a755d51-5eb7-4a89-a476-23ec744cfdf7)
+![Screenshot_20240505-211444](https://github.com/AhmadShykh/GuideTheBullet/assets/52326090/2bac422a-9c63-40d6-8533-d575b909a672)
+![Screenshot_20240505-211432](https://github.com/AhmadShykh/GuideTheBullet/assets/52326090/b2099144-677e-4164-a3d0-58d9f5441cb2)
+![Screenshot_20240505-211426](https://github.com/AhmadShykh/GuideTheBullet/assets/52326090/413a18d6-78ff-4973-b253-8f0fe15596fe)
+![Screenshot_20240505-211408](https://github.com/AhmadShykh/GuideTheBullet/assets/52326090/4d541094-b05c-4a91-93d7-a84cd3feaa29)
+![Screenshot_20240505-211353](https://github.com/AhmadShykh/GuideTheBullet/assets/52326090/017c1fc1-6eae-4ca1-ae15-f6e599dfce95)
+![Screenshot_20240505-211346](https://github.com/AhmadShykh/GuideTheBullet/assets/52326090/05f3c39e-b7f8-4357-96d3-b0545c1bb413)
+![Screenshot_20240505-211332](https://github.com/AhmadShykh/GuideTheBullet/assets/52326090/1ab87871-473a-4975-b1b0-63bfc79ac4f3)
+
+
 # Disclaimer
 
 Guide The Bullet is a fictional game concept created for educational and entertainment purposes only. Any resemblance to actual games, living or dead, is purely coincidental.
